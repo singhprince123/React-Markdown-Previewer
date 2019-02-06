@@ -18,18 +18,26 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-         <div className="col-10 mx-auto col-md-6">
-           <Editor markup={this.state.markup}
-                   inputHandler ={this.inputHandler}
-           />
-         </div>
-         <div className="col-10 mx-auto col-md-6">
-          <Previewer markup={this.state.markup}/>
-         </div>
+      <React.Fragment>
+         <div className="Header text-capitalize text-center  p-2">react markdown previewer</div>
+         <div className="container">
+       
+       <div className="row">
+        <div className="col-10 mx-auto col-md-6 ">
+          <Editor markup={this.state.markup}
+                  inputHandler ={this.inputHandler}
+          />
+           
         </div>
-      </div>
+         <div className="col-10 mx-auto col-md-6 my-4">
+          <Previewer markup={this.state.markup}/>
+          
+        </div>
+        
+       </div>
+     </div>
+      </React.Fragment>
+     
     );
   }
 }

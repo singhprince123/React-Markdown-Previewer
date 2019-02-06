@@ -1,32 +1,63 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+
+.Header{
+  width: 100vw;
+  font-size: 2.5rem;
+  background: linear-gradient(to right,#537895  0%, #09203f 100%);
+  color: white
+} 
+.Editor{
+  height: 70vh;
+  margin: 2rem 0rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: 4px 4px 4px gray
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Editor__title{
+  font-size: 1rem;
+  padding: 0.4rem;
+  border: 2px solid black;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.Editor__form{
+  
+  padding: 0.4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control{
+  background: linear-gradient(to right,#a1c4fd  0%, #c2e9fb 100%);
+  border:0px;
+  height: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-control:focus{
+  border:0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.Previewer{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: 4px 4px 4px gray
+}
+.Previewer__title{
+   font-size: 1rem;
+   padding: 0.4rem;
+   border: 2px solid black;
+  
+}
+
+.Previewer__container{
+  height: 70vh;
+  padding: 0.4rem;
 }
